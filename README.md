@@ -713,3 +713,19 @@ end
 
 ```
 
+# Using DGEO Cluster
+
+Submitting a job
+```console
+>nohup salloc -N 3 --ntasks-per-node=8 --mem=10G -p demo srun ./wrf.exe &
+```
+
+To check if it is working
+
+```console
+>squeue
+              JOBID PARTITION     NAME     USER ST       TIME  NODES  NODELIST(REASON)
+                 79      demo     srun asepulve  R       0:16      3  nodo[001-003]
+```
+
+
