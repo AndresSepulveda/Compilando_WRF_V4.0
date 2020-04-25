@@ -278,20 +278,34 @@ status = 2
 SUCCESS test 2 fortran + c + netcdf + mpi
 ```
 
-## Building WRFV3
+## Building WRF_V4.0
 
 * _A video of this part is available [here](https://www.youtube.com/watch?v=hkLrdlQnKTw)._
 
-After ensuring that all libraries are compatible with the compilers, you can now prepare to build WRFV3. If you do not already have a `WRFV3` tar file, move to your `Build_WRF` directory, download that file and unpack it. Then go into the `WRFV3` directory and create a configuration file for your computer and compiler.
+After ensuring that all libraries are compatible with the compilers, you can now prepare to build WRFV4. If you do not already have a `WRFV4` tar file, move to your `Build_WRF` directory, download that file and unpack it. Then go into the `WRFV4` directory and create a configuration file for your computer and compiler.
+
+
 ```console
 $ cd {path_to_dir}/Build_WRF
-$ wget http://www2.mmm.ucar.edu/wrf/src/WRFV3.9.1.1.TAR.gz
-$ tar -zxvf WRFV3.9.1.1.TAR.gz
+$ wget http://www2.mmm.ucar.edu/wrf/src/WRFV4.0.TAR.gz
+$ tar -zxvf WRFV4.0.TAR.gz
 $ cd {path_to_dir}/Build_WRF/WRFV3
 $ ./configure
 ```
 
-You will see various options. Choose the option that lists the compiler you are using and the way you wish to build WRFV3 (i.e., serially or in parallel). Although there are 3 different types of parallel (smpar, dmpar, and dm+sm), it is recommended to  choose smpar option.
+This WRFV4.0 version is from 2018.
+
+The latest version can be obtained from
+
+https://github.com/wrf-model/WRF
+
+and 
+
+https://github.com/wrf-model/WPS
+
+
+
+You will see various options. Choose the option that lists the compiler you are using and the way you wish to build WRFV4 (i.e., serially or in parallel). Although there are 3 different types of parallel (smpar, dmpar, and dm+sm), it is recommended to  choose smpar option.
 ```console
 checking for perl5... no
 checking for perl... found /usr/bin/perl (perl)
