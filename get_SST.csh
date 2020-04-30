@@ -1,5 +1,7 @@
 #!bin/csh
 #
+#  NOT WORKING ! New repository needed
+#
 # Get SST for a certain date
 #
 # 28/05/2015 Andres Sepulveda - University of Concepcion (andres@dgeo.udec.cl)
