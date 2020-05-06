@@ -742,4 +742,11 @@ To check if it is working
                  79      demo     srun asepulve  R       0:16      3  nodo[001-003]
 ```
 
+Checking the status of the cluster
+
+```console
+>sinfo
+PARTITION AVAIL  TIMELIMIT  NODES  STATE NODELIST
+demo*        up   infinite      6   idle nodo[001-006]
+```
 
