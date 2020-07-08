@@ -214,6 +214,16 @@ $ make install
 $ cd ..
 ```
 
+For WRF4.1 it might be possible to use the following steps to install libpng (Thanks to Francisco Alvial)
+
+```console
+sudo add-apt-repository ppa:linuxuprising/libpng12
+sudo apt update
+sudo apt install libpng12-0
+```
+
+Info from:  https://askubuntu.com/questions/1194386/how-to-correctly-install-libpng12-0-on-the-ubuntu-19-10
+
 Configuring JasPer: This is a compression library necessary for compiling WPS (specifically ungrib) with GRIB2 capability.
 Assuming all the **export** commands from the NetCDF install are already set, you can move on to the commands to install jasper.
 ```console
